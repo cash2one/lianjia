@@ -95,7 +95,7 @@ def generate_page_url_list():
 
 #* 通过小区id，从数据库中读取当前小区均价
 def db_xiaoqu_avg_price(xiaoqu_id):
-    s_connect = pymysql.connect(host='rdsdld66mt04nt1lt3k5o.mysql.rds.aliyuncs.com',
+    s_connect = pymysql.connect(host='localhost',
                 port=3306,
                 user='lianjia_user',
                 passwd='JN7lebwqHhwCtYGq',
@@ -119,7 +119,7 @@ def db_xiaoqu_avg_price(xiaoqu_id):
 
 #* 将好房源的id和url写入数据库
 def db_insert_good_fang(fang_id, fang_url):
-    s_connect = pymysql.connect(host='rdsdld66mt04nt1lt3k5o.mysql.rds.aliyuncs.com',
+    s_connect = pymysql.connect(host='localhost',
                 port=3306,
                 user='lianjia_user',
                 passwd='JN7lebwqHhwCtYGq',
