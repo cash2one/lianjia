@@ -1,7 +1,7 @@
 import pymysql
 
 def db_xiaoqu_avg_price(xiaoqu_id):
-    s_connect = pymysql.connect(host='rdsdld66mt04nt1lt3k5o.mysql.rds.aliyuncs.com',
+    s_connect = pymysql.connect(host='localhost',
                 port=3306,
                 user='lianjia_user',
                 passwd='JN7lebwqHhwCtYGq',
